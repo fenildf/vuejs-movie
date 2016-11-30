@@ -10,10 +10,10 @@ var PORT = 4100;
  * @type {exports}
  */
 var http = require("http");
-var httputils = require("./server/httputils");
+var httputils = require("./lib/httputils");
 var url = require("url");
 var fs = require("fs");
-var mine = require("./server/mine").types;
+var mine = require("./lib/mine").types;
 var path = require("path");
 
 var server = http.createServer(function(request, response){
@@ -28,7 +28,7 @@ var server = http.createServer(function(request, response){
                 'Content-Type':'text/plain'
             });
 
-            response.write("This request URL"+pathname+"was not found on this server.");
+            response.write("This request URL"+pathname+"was not found on this lib.");
             response.end();
         }else{
             fs.readFile(realPath,"binary", function(err, file){

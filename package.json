@@ -1,24 +1,25 @@
 {
-  "name": "vuejs-movie",
-  "version": "1.0.0",
-  "description": "vuejs+node+express+mongodb+webpack+gulp+restful-api",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/liuyidi/vuejs-movie.git"
-  },
-  "keywords": [
-    "vuejs",
-    "nodejs"
-  ],
-  "author": "liuyidi",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/liuyidi/vuejs-movie/issues"
-  },
-  "homepage": "https://github.com/liuyidi/vuejs-movie#readme"
+    "name": "vuejs-movie",
+    "version": "1.0.0",
+    "description": "vuejs+node+express+mongodb+webpack+gulp+restful-api",
+    "main": "app.js",
+    "scripts": {
+        "test": "",
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/liuyidi/vuejs-movie.git"
+    },
+    "dependencies": {
+        "connect-flash": "0.1.1",
+        "connect-mongo": "1.3.2",
+        "ejs": "2.5.2",
+        "express": "4.14.0",
+        "express-formidable": "1.0.0",
+        "express-session": "1.14.2"
+    },
+    "devDependencies": {
+
+    }
 }
